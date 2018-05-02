@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Slack files cleaner",
+  "version": "0.1.0",
+  "permissions": [
+        "activeTab"
+    ],
+  "description": "Slack uploaded file cleaner extension",
+	"background":
+	    {
+	        "scripts": ["lib/jquery-3.3.1.min.js", "background.js"]
+	    },
+  "content_scripts":
+    [
+        {
+            "matches": ["https://app.delete-slack-files.com/*"],
+            "js":["lib/jquery-3.3.1.min.js", "background.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
