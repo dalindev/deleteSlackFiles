@@ -12,11 +12,11 @@
 $(function() {
 	// Add overlay btn
 	$('body').prepend('<div style="position:fixed;z-index:9999;float:left;top:200px;left:30px;">'+
-					  ' <button style="background:#009A44;border-radius:5px;color:white;font-size:20px;" id="remove_all_slack_file">'+
-					  '   Remove All Slack files!'+
-					  ' </button><br>'+
-					  '<span style="font-size:18px;">Page Count: <b><span id="action_count">0</span></span></b>'+
-					  '</div>');
+			' <button style="background:#009A44;border-radius:5px;color:white;font-size:20px;" id="remove_all_slack_file">'+
+			'   Remove All Slack files!'+
+			' </button><br>'+
+			'<span style="font-size:18px;">Page Count: <b><span id="action_count">0</span></span></b>'+
+			'</div>');
 
 	//click event
 	$('#remove_all_slack_file').click(start);
